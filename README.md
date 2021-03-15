@@ -53,7 +53,7 @@ wget `(jq '.[] | .download_url' $RAW | sed 's/"//g')` >  /dev/null 2>&1
 
 ```
 
-Finalmente le os arquivos do diretorio atual e gera os thumbnails com convert 
+Finalmente, le os arquivos do diretorio atual e gera os thumbnails com convert 
 
 
 ```bash
