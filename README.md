@@ -1,5 +1,5 @@
 
-#### Exemplo de shellscript basico pra gerar thumbnails com images de um endpoint  
+#### Exemplo de shellscript basico pra gerar thumbnails com imagens de um endpoint  
 
 *Utiliza o convert do imagemagick, jq (JSON query), curl e utilitarios comuns*
 
@@ -37,7 +37,7 @@ fi
 
 ```
 
-Le o end-point e salva um arquivo JSON contendo as urls das images
+Le o end-point e salva um arquivo JSON contendo as urls das imagens
 
 ```bash
 
@@ -53,7 +53,7 @@ wget `(jq '.[] | .download_url' $RAW | sed 's/"//g')` >  /dev/null 2>&1
 
 ```
 
-Aqui le os arquivos do diretorio atual e gera os thumbnails com convert 
+Finalmente le os arquivos do diretorio atual e gera os thumbnails com convert 
 
 
 ```bash
